@@ -1,0 +1,50 @@
+.team-badge{
+	max-height: 40px;
+	max-width: 40px;
+	transition: all .2s ease-in-out;
+	filter: grayscale(200%);
+
+
+}
+.team-badge:hover{
+	transform: scale(1.5);
+	filter: grayscale(0%);
+	filter: brightness(100%);
+}
+
+.team-badge-mob{
+	max-height: 30px;
+	max-width: 30px;
+}
+
+.nav-pills .nav-link{
+	transition: all .1s ease-in-out;
+}
+
+.nav-pills .nav-link:hover{
+	background-color: white;
+	color:black;
+	transform: scale(1.1);
+}
+
+.nav-pills .current{
+	background-color: gray;
+	color:white;
+}
+
+@media only screen and (max-width: 575px) {
+    header {
+        min-height: 180px;
+        background-image: url('../img/bg_dark.jpg');
+	/*background-color: #24292e;*/
+    }
+}
+
+@media only screen and (min-device-width : 575px){
+
+header{
+	min-height: 120px;
+	background-image: url('../img/bg_dark.jpg');
+	/*background-color: #24292e;*/
+}
+}
