@@ -17,34 +17,44 @@
 	max-width: 30px;
 }
 
-.nav-pills .nav-link{
-	transition: all .1s ease-in-out;
+.nav-pills{
+	font-weight: bold;
 }
 
-.nav-pills .nav-link:hover{
-	background-color: white;
+.nav-pills .nav-item .nav-link{
+	transition: all .1s ease-in-out;
+	color:white;
+}
+
+.nav-pills .nav-item .nav-link:hover{
+	background-color: lightgray;
 	color:black;
 	transform: scale(1.1);
 }
 
-.nav-pills .current{
-	background-color: gray;
-	color:white;
+.nav-pills .nav-item .current{
+	background-color: white;
+	color:black;
+}
+@media (min-width: 765px) { 
+	header{
+		height: 120px;
+		background-image: url('../img/bg_dark.jpg');
+		/*background-color: #24292e;*/
+	}
 }
 
-@media only screen and (max-width: 575px) {
-    header {
-        min-height: 180px;
-        background-image: url('../img/bg_dark.jpg');
-	/*background-color: #24292e;*/
-    }
+@media (max-width: 764px) { 
+	.mob-background{
+		background-image: url('../img/bg_dark.jpg');
+	}
+
+	header{
+		height: 80px;
+		background-image: url('../img/bg_dark.jpg');
+		/*background-color: #24292e;*/
+	}
 }
 
-@media only screen and (min-device-width : 575px){
 
-header{
-	min-height: 120px;
-	background-image: url('../img/bg_dark.jpg');
-	/*background-color: #24292e;*/
-}
-}
+
